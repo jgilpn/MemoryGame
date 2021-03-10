@@ -1,0 +1,11 @@
+const GAME_TITLE = "Memory Game";
+const GAME_OVER_MESSAGE = "GAME OVER";
+const TERMINATE_MESSAGE = "Are you sure you want to end game?";
+const SCORE_TAG = "SCORE:";
+const TERMINATE_BUTTON = "Terminate";
+const SUMMARY_TITLE = "Summary";
+const HR_TEXT = "OR";
+const LEADERBOARD_TITLE = "Leaderboard";
+const NAME_TAG = "NAME:";
+const RANK_TAG = "RANK:";
+const TOP_FIVE_TITLE = "Top 5";

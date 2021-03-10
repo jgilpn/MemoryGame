@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="doc-title"></title>
+    <meta name="description" content="A memory game" />
+    <meta name="author" content="John Gilpin" />
+    <link rel="stylesheet" href="./css/game.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Title -->
+      <h1 id="game-title" class="title"></h1>
+
+      <!-- Terminate Button and Score -->
+      <div class="score-terminate">
+        <div class="score-container"><span id="score-tag"></span> <span id="score">0</span></div>
+        <div id="terminate" class="terminate" onclick="terminateGame()"></div>
+      </div>
+
+      <!-- Dynamically Created Game Gride -->
+      <div class="game-grid"></div>
+      <audio id="ding" src="./audio/ding.mp3"></audio>
+      <audio id="levelup" src="./audio/levelup.mp3"></audio>
+      <audio id="wrong" src="./audio/wrong.mp3"></audio>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./js/constants.js"></script>
+    <script src="./js/grid.js"></script>
+    <script src="./js/memorygame.js"></script>
+  </body>
+</html>

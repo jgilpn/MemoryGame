@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="doc-title"></title>
+    <meta name="description" content="Leaderboard of memory game." />
+    <meta name="author" content="John Gilpin" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poiret+One|Railway"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2ac5b13a14.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Banner with Title -->
+    <div class="banner">
+      <h1 id="title"></h1>
+    </div>
+
+    <div class="container form">
+      <h1 class="title"><b id="name-tag"></b> <u><span id="name"></span></u> </h1>
+      <h1 class="title"><b id="score-tag"></b> <u><span id="score"></span></u></h1>
+      <h1 class="title"><b id="rank-tag"></b> <u><span id="rank"></span></u></h1>
+    </div>
+
+    <div class="container form">
+      <h2 class="hr-with-text"><span id="top-five-title"></span></h2>
+      <div id="top-five" class="leaderboard-container text"></div>
+
+      <!-- RESTART button -->
+      <input
+        class="cancel button"
+        type="button"
+        value="RESTART"
+        onclick="location.href='./index.html'"
+      />
+    </div>
+    
+    <script src="./js/constants.js"></script>
+    <script src="./js/leaderboard.js"></script>
+  </body>
+</html>

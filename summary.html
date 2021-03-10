@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="doc-title"></title>
+    <meta name="description" content="Summary of gameplay." />
+    <meta name="author" content="John Gilpin" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poiret+One|Railway"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2ac5b13a14.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Banner with Title -->
+    <div class="banner">
+      <h1 id="title"></h1>
+    </div>
+
+    <form class="container form">
+      <!-- RESTART button -->
+      <input
+        class="cancel button"
+        type="button"
+        value="RESTART"
+        onclick="location.href='./index.html'"
+      />
+
+      <h2 class="hr-with-text"><span id="hr-text"></span></h2>
+
+      <!-- Field for users to submit score to leaderboard -->
+      <h1 class="title"><span id="score-tag"></span> <span id="score"></span></h1>
+      <input id="input" class="input" type="text" placeholder="name" />
+      <div id="loader"></div>
+      <input id="submit" class="button" type="button" value="Submit" onclick="submitToLeaderboard()"/>
+    </form>
+
+    <!-- JavaScript -->
+    <script src="./js/constants.js"></script>
+    <script src="./js/summary.js"></script>
+  </body>
+</html>
